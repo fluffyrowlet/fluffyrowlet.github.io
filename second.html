@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Your Name - My Photos</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="interactivity.js"></script>
+
+<div id="header" class="header">
+    <a href="./index.html" class="container clickable" id="account-container">
+        <div id="name-container">Cade W</div>
+    </a>
+    <div class="container" id="title-container">
+        <h2>Cades Photos</h2>
+    </div>
+    <div class="container" id="pages-container">
+        <a class="pages-btn clickable" href="./index.html">Home</a>
+        <a class="pages-btn clickable" href="./second.html">My Photos</a>
+    </div>
+</div>
+
+<div class="container body-container">
+
+    <div class="new-container">
+        <div class="new-content-title center-content">
+            <h2 class="fancy-title">My Five Favorite Shots</h2>
+        </div>
+        <div class="new-content-body">
+            <div class="photo-grid">
+                <div class="photo-block">
+                    <img src="photo1.jpg" alt="PLACEHOLDER: describe photo 1">
+                    <p>Photo 1: Castle on the Hill</p>
+                </div>
+                <div class="photo-block">
+                    <img src="photo2.jpg" alt="PLACEHOLDER: describe photo 2">
+                    <p>Photo 2: Cat Nap</p>
+                </div>
+                <div class="photo-block">
+                    <img src="photo3.jpg" alt="PLACEHOLDER: describe photo 3">
+                    <p>Photo 3: When in Bern</p>
+                </div>
+                <div class="photo-block">
+                    <img src="photo4.jpg" alt="PLACEHOLDER: describe photo 4">
+                    <p>Photo 4: Foggy Forest</p>
+                </div>
+                <div class="photo-block">
+                    <img src="photo5.jpg" alt="PLACEHOLDER: describe photo 5">
+                    <p>Photo 5: Impending Floods</p>
+                </div>
+            </div>
+
+            <p>These photos, along with the one on the homepage are some of my more recent photos. Photos 1 and 2 are more of my recent works while Photos 3, 4, and 5 
+                were all taken during or after my last year of high school. Throughout this period of my life, I wanted to work on experimenting with light, color, and 
+                fog to portray a kind of feeling or moment to my viewers. Photo 2 was taken in a mountain town in Italy, where the weather was nice but also cold and windy. 
+                I was able to find a cat sleeping peacefully on one of the nearby roofs and I took this shot. I tried to make the colors in the image less dramatic to 
+                try and compliment the calmness of the cat, unlike Photos 1 and 3. Photo 1 was taken in Edinburgh of the famous castle from the park below. I remember the 
+                sunlight being very harsh which is why I amplified the light in the top corner to try and share that moment with the audience. Photo 3 was taken in Bern 
+                and I remember it being very nice and sunny with beautiful looking water. It was a very nice day and I remember my eyes being drawn to the roofs which is 
+                what I tried to emphasize in the image. Photo 4 was taken in Switzerland from the bottom of a valley, and I remember the fog preventing me from seeing the 
+                looming forests above, so I tried to amplify the fog effect in the image. Photo 5 was also taken on a hike in Switzerland and I remember the clouds being very 
+                dark and I wanted to create a darkish feeling with the image.
+            </p>
+
+            <h3>My personal ranking</h3>
+            <ul>
+                <li>1. Photo 1: Castle on the Hill</li>
+                <li>2. Photo 3: When in Bern</li>
+                <li>3. Photo 2: Cat Nap</li>
+                <li>4. Photo 4: Foggy Forest</li>
+                <li>5. Photo 5: Impending Floods</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="new-container">
+        <div class="new-content-title center-content">
+            <h2 class="fancy-title">Which Photo Is Your Favorite?</h2>
+        </div>
+        <div class="new-content-body center-content">
+            <div id="chart-viz"></div>
+            <script>addBarChartToPage("chart-viz");</script>
+        </div>
+    </div>
+
+</div>
+
+<div id="footer" class="footer"></div>
+
+</body>
+</html>
